@@ -1,8 +1,16 @@
+import React, { useEffect } from 'react';
+import alanBtn from '@alan-ai/alan-sdk-web'
 import './App.css';
 import { NewsCards, Modal } from '../Component'
 
 
-function App() {
+const App = () => {
+  useEffect(() => {
+    alanBtn({
+
+    })
+  }, [])
+
   return (
     <div className="App">
       <Modal />
