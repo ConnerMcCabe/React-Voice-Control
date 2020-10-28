@@ -11,6 +11,11 @@ const App = () => {
   useEffect(() => {
     alanBtn({
       key: alanKey,
+      onCommand: ({ command, articles }) => {
+        if(command === 'newHeadlines') {
+          console.log(articles);
+        }
+      }
     })
   }, [])
 
